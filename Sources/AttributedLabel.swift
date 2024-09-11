@@ -166,7 +166,7 @@ open class AttributedLabel: UIView {
         let button = DetectionAreaButton(detection: detection)
         button.accessibilityLabel = text
         button.isAccessibilityElement = true
-        button.accessibilityTraits = UIAccessibilityTraitButton
+        button.accessibilityTraits = UIAccessibilityTraits.button
         button.isUserInteractionEnabled = state.isEnabled
         button.addTarget(self, action: #selector(handleDetectionAreaButtonClick), for: .touchUpInside)
         detectionAreaButtons.append(button)
